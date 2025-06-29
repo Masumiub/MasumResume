@@ -6,16 +6,18 @@ import { Fade } from "react-awesome-reveal";
 const Skills = () => {
     return (
         <Fade>
-        <div className='p-5 skillBg py-45'>
-            <div>
-                <h1 className='font-bold text-5xl md:text-7xl lg:text-8xl'>
-                    Skills
-                </h1>
-            </div>
-            <div className='flex flex-col-reverse lg:flex-row gap-10 lg:items-center mt-10'>
-                <div className='w-full lg:w-1/2'>
+            <div className='p-5 skillBg py-45'>
+                <div>
+                    <h1 className='font-bold text-5xl md:text-7xl lg:text-8xl'>
+                        Skills
+                    </h1>
+                </div>
+                <div className='flex flex-col-reverse lg:flex-row gap-10 lg:items-center mt-10'>
+                    <div className='w-full lg:w-1/2'>
 
-                    
+                        <div>
+                            <h2 className='mb-5 font-bold text-3xl'>Frontend Development</h2>
+                        </div>
                         <div className='flex p-4 rounded-2xl border-2 border-dashed border-indigo-950 gap-5 items-center backdrop-blur-2xl backdrop-brightness-50'>
                             <div>
                                 <img src='https://skillicons.dev/icons?i=html' alt="html" />
@@ -56,6 +58,46 @@ const Skills = () => {
                             </div>
                         </div>
 
+
+
+
+                    </div>
+
+                    <div className='w-full lg:w-1/2'>
+
+                        <div>
+                            <h2 className='mb-5 font-bold text-3xl'>Backend Development</h2>
+                        </div>
+                        <div className='flex p-4 rounded-2xl border-2 border-dashed border-indigo-950 gap-5 items-center backdrop-blur-2xl backdrop-brightness-50'>
+                            <div>
+                                <img src='https://skillicons.dev/icons?i=express' alt="express" />
+                            </div>
+                            <div className='w-full'>
+                                <h2>Express JS</h2>
+                                <progress className="progress bg-white progress-primary rounded-2xl" value="82" max="100"></progress>
+                            </div>
+                        </div>
+
+                        <div className='flex p-4 rounded-2xl border-2 border-dashed border-indigo-950 gap-5 items-center mt-8 backdrop-blur-2xl backdrop-brightness-50'>
+                            <div>
+                                <img src='https://skillicons.dev/icons?i=mongodb' alt="mongodb" />
+                            </div>
+                            <div className='w-full'>
+                                <h2>Mongodb</h2>
+                                <progress className="progress bg-white progress-primary rounded-2xl" value="76" max="100"></progress>
+                            </div>
+                        </div>
+
+                        <div className='flex p-4 rounded-2xl border-2 border-dashed border-indigo-950 gap-5 items-center mt-8 backdrop-blur-2xl backdrop-brightness-50'>
+                            <div>
+                                <img src='https://skillicons.dev/icons?i=nodejs' alt="nodejs" />
+                            </div>
+                            <div className='w-full'>
+                                <h2>Node JS</h2>
+                                <progress className="progress bg-white progress-primary rounded-2xl" value="85" max="100"></progress>
+                            </div>
+                        </div>
+
                         <div className='flex p-4 rounded-2xl border-2 border-dashed border-indigo-950 gap-5 items-center mt-8 backdrop-blur-2xl backdrop-brightness-50'>
                             <div>
                                 <img src='https://skillicons.dev/icons?i=firebase' alt="firebase" />
@@ -66,66 +108,11 @@ const Skills = () => {
                             </div>
                         </div>
 
-                    
-                </div>
 
-                <div className='w-full lg:w-1/2'>
 
-                    
-                    <div className='flex p-4 rounded-2xl border-2 border-dashed border-indigo-950 gap-5 items-center backdrop-blur-2xl backdrop-brightness-50'>
-                        <div>
-                            <img src='https://skillicons.dev/icons?i=express' alt="express" />
-                        </div>
-                        <div className='w-full'>
-                            <h2>Express JS</h2>
-                            <progress className="progress bg-white progress-primary rounded-2xl" value="82" max="100"></progress>
-                        </div>
                     </div>
-
-                    <div className='flex p-4 rounded-2xl border-2 border-dashed border-indigo-950 gap-5 items-center mt-8 backdrop-blur-2xl backdrop-brightness-50'>
-                        <div>
-                            <img src='https://skillicons.dev/icons?i=mongodb' alt="mongodb" />
-                        </div>
-                        <div className='w-full'>
-                            <h2>Mongodb</h2>
-                            <progress className="progress bg-white progress-primary rounded-2xl" value="76" max="100"></progress>
-                        </div>
-                    </div>
-
-                    <div className='flex p-4 rounded-2xl border-2 border-dashed border-indigo-950 gap-5 items-center mt-8 backdrop-blur-2xl backdrop-brightness-50'>
-                        <div>
-                            <img src='https://skillicons.dev/icons?i=nodejs' alt="nodejs" />
-                        </div>
-                        <div className='w-full'>
-                            <h2>Node JS</h2>
-                            <progress className="progress bg-white progress-primary rounded-2xl" value="85" max="100"></progress>
-                        </div>
-                    </div>
-
-                    <div className='flex p-4 rounded-2xl border-2 border-dashed border-indigo-950 gap-5 items-center mt-8 backdrop-blur-2xl backdrop-brightness-50'>
-                        <div>
-                            <img src='https://skillicons.dev/icons?i=java' alt="java" />
-                        </div>
-                        <div className='w-full'>
-                            <h2>Java</h2>
-                            <progress className="progress bg-white progress-primary rounded-2xl" value="75" max="100"></progress>
-                        </div>
-                    </div>
-
-                    <div className='flex p-4 rounded-2xl border-2 border-dashed border-indigo-950 gap-5 items-center mt-8 backdrop-blur-2xl backdrop-brightness-50'>
-                        <div>
-                            <img src='https://skillicons.dev/icons?i=python' alt="python" />
-                        </div>
-                        <div className='w-full'>
-                            <h2>Python</h2>
-                            <progress className="progress bg-white progress-primary rounded-2xl" value="78" max="100"></progress>
-                        </div>
-                    </div>
-
-                   
                 </div>
             </div>
-        </div>
         </Fade>
     );
 };

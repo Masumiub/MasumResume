@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink, Outlet } from 'react-router';
 import logo from '../assets/logo.png'
+import newLogo from '../assets/logo-new.png'
 import './MainLayout.css'
 import { FaDownload, FaLinkedinIn } from "react-icons/fa6";
 import { HiHome } from "react-icons/hi";
@@ -24,7 +25,7 @@ const MainLayout = () => {
             {/* Page content */}
             <div className="drawer-content flex flex-col">
                 {/* Navbar (visible only on small screens) */}
-                <div className="navbar bg-base-300 md:hidden">
+                <div className="navbar bg-black border-b-1 border-white md:hidden">
                     <div className="flex-none">
                         <label htmlFor="my-drawer-3" aria-label="open sidebar" className="btn btn-square btn-ghost">
                             <svg
@@ -42,7 +43,7 @@ const MainLayout = () => {
                             </svg>
                         </label>
                     </div>
-                    <NavLink to='/' className="text-4xl font-bold md:block"><span className='text-purple-500'>M </span></NavLink>
+                    <NavLink to='/'> <img src={newLogo} alt="masum" className='w-12'/></NavLink>
                     <NavLink to='/' className="text-4xl font-bold md:block"><span className='text-white00'> Masum</span></NavLink>
                 </div>
 
