@@ -6,10 +6,13 @@ import Education from '../Components/Education';
 import ContactMe from '../Components/ContactMe';
 import Projects from '../Components/Projects';
 
+
 const Home = () => {
     return (
         <div className='home'>
-            <Header></Header>
+
+            <Header>
+            </Header>
 
             <AboutMe></AboutMe>
 

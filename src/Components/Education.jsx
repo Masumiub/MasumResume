@@ -9,7 +9,7 @@ const Education = () => {
         <div className='edubg py-45'>
             <div className='p-5'>
                 <div>
-                    <h1 className='font-bold text-8xl'>
+                    <h1 className='font-bold text-5xl md:text-7xl lg:text-8xl'>
                         Education
                     </h1>
                 </div>

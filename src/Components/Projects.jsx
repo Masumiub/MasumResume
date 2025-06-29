@@ -7,7 +7,7 @@ const Projects = () => {
         <Fade>
         <div className='p-5 Bg py-45'>
             <div>
-                <h1 className='font-bold text-8xl'>
+                <h1 className='font-bold text-5xl md:text-7xl lg:text-8xl'>
                     Projects
                 </h1>
             </div>
@@ -21,18 +21,18 @@ const Projects = () => {
                         </div>
                         <div className='w-full lg:w-1/2'>
                             <h1 className='mb-3 text-3xl font-bold'>Online Study Room</h1>
-                            <h2 className=''>Online Study Room, a collaborative web application built to enhance online group study experiences. Every registered user becomes a friend, allowing open collaboration, assignment sharing, and peer grading.</h2>
+                            <h2 className='leading-8 text-sm'>Online Study Room, a collaborative web application built to enhance online group study experiences. Every registered user becomes a friend, allowing open collaboration, assignment sharing, and peer grading.</h2>
 
-                            <div className='mt-4 '>
-                                <h3 className='text-xl'>Features:</h3>
-                                <ul className='text-sm '>
+                            <div className='mt-8'>
+                                <h3 className='text-xl font-bold'>Features:</h3>
+                                <ul className='text-sm leading-8  mt-3'>
                                     <li>- Create and share assignments with friends</li>
                                     <li>- Review and grade each other’s submissions</li>
                                     <li>- Track Your Submissions</li>
                                 </ul>
                             </div>
 
-                            <div className='mt-3 flex flex-wrap gap-4'>
+                            <div className='mt-6 flex flex-wrap gap-4'>
                                 <button className='border-1 border-primary px-4 rounded-full text-xs'>React JS</button> <button className='border-1 border-primary px-4 rounded-full text-xs'>Node JS</button> <button className='border-1 border-primary px-4 rounded-full text-xs'>Express JS</button> <button className='border-1 border-primary px-4 rounded-full text-xs'>Firebase</button>
                             </div>
 
@@ -81,18 +81,18 @@ const Projects = () => {
                         </div>
                         <div className='w-full lg:w-1/2'>
                             <h1 className='mb-3 text-3xl font-bold'>FavFreelancer</h1>
-                            <h2 className=''>FavFreelancer, a full-stack web application that connects freelancers with tasks, allowing users to add, manage, and bid on freelance projects in real-time.</h2>
+                            <h2 className='leading-8 text-sm'>FavFreelancer, a full-stack web application that connects freelancers with tasks, allowing users to add, manage, and bid on freelance projects in real-time.</h2>
 
-                            <div className='mt-4 '>
-                                <h3 className='text-xl'>Features:</h3>
-                                <ul className='text-sm'>
+                            <div className='mt-8'>
+                                <h3 className='text-xl font-bold'>Features:</h3>
+                                <ul className='text-sm leading-8  mt-3'>
                                     <li>- Add / Edit / Delete Tasks – Logged-in users can manage freelance tasks</li>
                                     <li>- Real-Time Bidding System – Tracks bids per task dynamically</li>
                                     <li>- Filtering & Mapping – Smooth task filtering for better UX</li>
                                 </ul>
                             </div>
 
-                            <div className='mt-3 flex flex-wrap gap-4'>
+                            <div className='mt-6 flex flex-wrap gap-4'>
                                 <button className='border-1 border-primary px-4 rounded-full text-xs'>React JS</button> <button className='border-1 border-primary px-4 rounded-full text-xs'>Node JS</button> <button className='border-1 border-primary px-4 rounded-full text-xs'>Express JS</button> <button className='border-1 border-primary px-4 rounded-full text-xs'>Firebase</button>
                             </div>
 
@@ -141,18 +141,18 @@ const Projects = () => {
                         </div>
                         <div className='w-full lg:w-1/2'>
                             <h1 className='mb-3 text-3xl font-bold'>Job Seeker</h1>
-                            <h2 className=''>Job Seeker, a responsive and intuitive job listing platform designed to help users explore job opportunities across multiple companies — all in one place.</h2>
+                            <h2 className='leading-8 text-sm'>Job Seeker, a responsive and intuitive job listing platform designed to help users explore job opportunities across multiple companies — all in one place.</h2>
 
-                            <div className='mt-4 '>
-                                <h3 className='text-xl'>Features:</h3>
-                                <ul className='text-sm'>
+                            <div className='mt-8'>
+                                <h3 className='text-xl font-bold'>Features:</h3>
+                                <ul className='text-sm leading-8 mt-3'>
                                     <li>- Browse jobs from various companies</li>
                                     <li>- Review job requirements</li>
                                     <li>- Check if they meet qualifications</li>
                                 </ul>
                             </div>
 
-                            <div className='mt-3 flex flex-wrap gap-4'>
+                            <div className='mt-6 flex flex-wrap gap-4'>
                                 <button className='border-1 border-primary px-4 rounded-full text-xs'>React JS</button>  <button className='border-1 border-primary px-4 rounded-full text-xs'>Tailwind CSS</button> <button className='border-1 border-primary px-4 rounded-full text-xs'>Firebase</button>
                             </div>
 

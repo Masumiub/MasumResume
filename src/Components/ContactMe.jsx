@@ -33,7 +33,7 @@ const ContactMe = () => {
             <div className='bg'>
                 <div className='p-5 py-45'>
                     <div>
-                        <h1 className='font-bold text-8xl'>
+                        <h1 className='font-bold text-5xl md:text-7xl lg:text-8xl'>
                             Contact Me
                         </h1>
                     </div>

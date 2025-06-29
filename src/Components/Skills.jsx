@@ -8,7 +8,7 @@ const Skills = () => {
         <Fade>
         <div className='p-5 skillBg py-45'>
             <div>
-                <h1 className='font-bold text-8xl'>
+                <h1 className='font-bold text-5xl md:text-7xl lg:text-8xl'>
                     Skills
                 </h1>
             </div>

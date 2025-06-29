@@ -4,22 +4,54 @@ import './Header.css'
 import { Slide } from "react-awesome-reveal";
 import { motion } from "motion/react";
 import { NavLink } from 'react-router';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { SplitText as GSAPSplitText } from "gsap/SplitText";
+import SplitText from "../Components/SplitText";
+import BlurText from "../Components/BlurText"
 
 
 const Header = () => {
+    // const handleAnimationComplete = () => {
+    //     console.log('All letters have animated!');
+    // };
+
     return (
         <div>
             <Slide direction="up" triggerOnce>
-            <div className='flex flex-col gap-10 lg:flex-row lg:items-center p-5 header py-45'>
-                
-                
-                    <div className='w-full lg:w-2/3'>
-                        <h3 className='font-semibold text-xl'>Full-stack Web Developer</h3>
+                <div className='flex flex-col gap-10 lg:flex-row lg:items-center p-5 header py-45'>
 
-                        <h1 className='mt-10 font-bold text-5xl md:text-7xl lg:text-9xl'>
+
+                    <div className='w-full lg:w-2/3'>
+                        <SplitText
+                            text="Hello! This is"
+                            className="text-4xl font-semibold text-center"
+                            delay={100}
+                            duration={0.6}
+                            ease="power3.out"
+                            splitType="chars"
+                            from={{ opacity: 0, y: 40 }}
+                            to={{ opacity: 1, y: 0 }}
+                            threshold={0.1}
+                            rootMargin="-100px"
+                            textAlign="center"
+                        />
+
+                        
+                        <BlurText
+                            text="MASUM MUSFIQUE"
+                            delay={300}
+                            animateBy="words"
+                            direction="top"
+                            className="mt-7 font-bold text-5xl md:text-7xl lg:text-9xl"
+                        />
+
+                        <h3 className='font-semibold text-xl md:text-5xl mt-3'>Full-stack Web Developer</h3>
+
+                        {/* <h1 className='mt-10 font-bold text-5xl md:text-7xl lg:text-9xl'>
                             MASUM <br />
                             MUSFIQUE
-                        </h1>
+                        </h1> */}
 
                         <div className='mt-15'>
                             <p>I'm a full-stack web developer and I work remotely Dhaka, Bangladesh.</p>
@@ -49,16 +81,16 @@ const Header = () => {
                             </a>
                         </div>
                     </div>
-                
-                <div className='w-full lg:w-1/3'>
-                    <motion.img src={profilePic} 
-                                            animate={{ y: [100, 150, 100] }}
-                        transition={{ duration: 5, repeat: Infinity }}
-                    alt="profilePic" className='w-full' />
-                </div>
 
-                
-            </div>
+                    <div className='w-full lg:w-1/3'>
+                        <motion.img src={profilePic}
+                            animate={{ y: [100, 150, 100] }}
+                            transition={{ duration: 5, repeat: Infinity }}
+                            alt="profilePic" className='w-full' />
+                    </div>
+
+
+                </div>
             </Slide>
         </div>
     );

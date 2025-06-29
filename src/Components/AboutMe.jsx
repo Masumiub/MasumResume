@@ -15,11 +15,11 @@ const AboutMe = () => {
 
 
                     <div className='w-full lg:w-2/3'>
-                        <h1 className='font-bold text-8xl'>
+                        <h1 className='font-bold text-5xl md:text-7xl lg:text-8xl'>
                             About Me
                         </h1>
                         <p className='mt-10 leading-8'>Hi! I'm a driven and detail-oriented Frontend Developer with hands-on experience in building responsive and dynamic web applications using React.js, Tailwind CSS, DaisyUI, and JavaScript. I’m passionate about creating clean, user-friendly interfaces that deliver great user experiences.
-
+                        
                         </p>
 
                         <p className='mt-4 leading-8'>I bring a solid foundation in HTML, CSS, and modern JavaScript frameworks, along with backend understanding using Node.js, Express.js, and MongoDB. I'm also comfortable working with tools like Firebase Authentication, GitHub, and Next.js, and have a working knowledge of PHP, C++, Java, and Python
