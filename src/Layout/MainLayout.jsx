@@ -2,13 +2,17 @@ import React from 'react';
 import { NavLink, Outlet } from 'react-router';
 import logo from '../assets/logo.png'
 import './MainLayout.css'
-import { FaDownload } from "react-icons/fa6";
+import { FaDownload, FaLinkedinIn } from "react-icons/fa6";
 import { HiHome } from "react-icons/hi";
 import { FaUserCheck } from "react-icons/fa";
 import { MdOutlineChecklist } from "react-icons/md";
 import { FaBookOpen } from "react-icons/fa";
 import { MdWork } from "react-icons/md";
 import { RiMailSendFill } from "react-icons/ri";
+import { FiGithub } from 'react-icons/fi';
+import { RxDiscordLogo } from 'react-icons/rx';
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 
 const MainLayout = () => {
@@ -38,8 +42,8 @@ const MainLayout = () => {
                             </svg>
                         </label>
                     </div>
-                     <NavLink to='/' className="text-3xl font-bold md:hidden"> <i><span className='text-green-500'>Masum</span></i></NavLink>
-                    <NavLink to='/' className="text-3xl font-bold hidden md:block"> <i><span className='text-green-500'>Masum</span></i> Musfique</NavLink>
+                    <NavLink to='/' className="text-4xl font-bold md:block"><span className='text-purple-500'>M </span></NavLink>
+                    <NavLink to='/' className="text-4xl font-bold md:block"><span className='text-white00'> Masum</span></NavLink>
                 </div>
 
                 {/* Main content */}
@@ -55,9 +59,14 @@ const MainLayout = () => {
 
                 <ul className="menu bg-base-100 w-80 min-h-full p-4 text-base-content drawerBg">
                     {/* Sidebar content */}
-                    <li><NavLink to='/'><img src={logo} alt="logo" className='border-b-1 border-white'/></NavLink></li>
+                    <li><NavLink to='/'><img src={logo} alt="logo" className='border-b-1 border-white' /></NavLink></li>
                     <li><NavLink to='/' className="text-4xl font-bold md:block mt-8"><span className='text-purple-500'>MASUM</span></NavLink></li>
                     <li><NavLink to='/' className="text-4xl font-bold md:block">  MUSFIQUE</NavLink></li>
+                    <li>                                    <div className='flex mt-2 gap-5'>
+                        <p> <a href="https://www.linkedin.com/in/musfique-77-masum/" target='_blank'><FaLinkedinIn size={20}  /></a> </p>
+                        <p> <a href="https://github.com/Masumiub" target='_blank'><FiGithub size={20}  /></a> </p>
+                        <p> <a href="https://discord.com/users/masummusfique2789" target='_blank'><RxDiscordLogo size={20}  /></a></p>
+                    </div></li>
                     <li><NavLink to='/' className='mt-10'><HiHome />Home</NavLink></li>
                     <li><NavLink to='/aboutMe'><FaUserCheck />About Me</NavLink></li>
                     <li><NavLink to='/skills'><MdOutlineChecklist />Skills</NavLink></li>
@@ -66,9 +75,10 @@ const MainLayout = () => {
                     <li><NavLink to='/projects'><MdWork />Projects</NavLink></li>
                     <li><NavLink to='/contactme'><RiMailSendFill />Contact</NavLink></li>
                     <li><a href="/MasumMusfique_Resume.pdf" download> <FaDownload />Resume</a></li>
-                    
+
                 </ul>
             </div>
+            <ToastContainer />
         </div>
     );
 };
