@@ -1,0 +1,6 @@
+.bg{
+    background-image: url('../assets/resume-bg.png');
+    background-size:contain ;
+    background-repeat: no-repeat;
+    background-position: right;
+}

@@ -1,0 +1,16 @@
+.skillBg {
+    position: relative;
+    z-index: 1;
+}
+
+.skillBg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('../assets/resume-bg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    transform: scaleX(-1);
+    z-index: -1;
+}
