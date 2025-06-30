@@ -4,3 +4,7 @@
     background-repeat: no-repeat;
     background-position: bottom;
 }
+
+.active{
+    border-left: 1px solid white;
+}

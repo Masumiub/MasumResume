@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink, Outlet } from 'react-router';
+import { Link, NavLink, Outlet } from 'react-router';
 import logo from '../assets/logo.png'
 import newLogo from '../assets/logo-new.png'
 import './MainLayout.css'
@@ -43,8 +43,8 @@ const MainLayout = () => {
                             </svg>
                         </label>
                     </div>
-                    <NavLink to='/'> <img src={newLogo} alt="masum" className='w-12'/></NavLink>
-                    <NavLink to='/' className="text-4xl font-bold md:block"><span className='text-white00'> Masum</span></NavLink>
+                    <Link to='/'> <img src={newLogo} alt="masum" className='w-12'/></Link>
+                    <Link to='/' className="text-4xl font-bold md:block"><span className='text-white00'> Masum</span></Link>
                 </div>
 
                 {/* Main content */}
@@ -60,9 +60,9 @@ const MainLayout = () => {
 
                 <ul className="menu bg-base-100 w-80 min-h-full p-4 text-base-content drawerBg">
                     {/* Sidebar content */}
-                    <li><NavLink to='/'><img src={logo} alt="logo" className='border-b-1 border-white' /></NavLink></li>
-                    <li><NavLink to='/' className="text-4xl font-bold md:block mt-8"><span className='text-purple-500'>MASUM</span></NavLink></li>
-                    <li><NavLink to='/' className="text-4xl font-bold md:block">  MUSFIQUE</NavLink></li>
+                    <li><Link to='/'><img src={logo} alt="logo" className='border-b-1 border-white h-80' /></Link></li>
+                    <li><Link to='/' className="text-4xl font-bold md:block mt-8"><span className='text-purple-500'>MASUM</span></Link></li>
+                    <li><Link to='/' className="text-4xl font-bold md:block">  MUSFIQUE</Link></li>
                     <li>                                    <div className='flex mt-2 gap-5'>
                         <p> <a href="https://www.linkedin.com/in/musfique-77-masum/" target='_blank'><FaLinkedinIn size={20}  /></a> </p>
                         <p> <a href="https://github.com/Masumiub" target='_blank'><FiGithub size={20}  /></a> </p>

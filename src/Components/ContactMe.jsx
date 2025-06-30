@@ -46,7 +46,7 @@ const ContactMe = () => {
 
                         <div className='w-full lg:w-1/2'>
 
-                            <div className='h-full flex p-10 rounded-2xl border-2 border-dashed border-indigo-950 gap-5 items-center backdrop-blur-2xl backdrop-brightness-50'>
+                            <div className='h-full flex p-7 rounded-2xl border-2 border-dashed border-indigo-950 gap-5 items-center backdrop-blur-2xl backdrop-brightness-50'>
                                 <div>
                                     <h3 className='text-2xl'>Personal Information:</h3>
 
@@ -78,9 +78,9 @@ const ContactMe = () => {
 
                                     <p className='mt-8 text-2xl'>Follow me: </p>
                                     <div className='flex mt-2 gap-5'>
-                                        <p className='p-3 rounded-full border-1'> <a href="https://www.linkedin.com/in/musfique-77-masum/" target="_blank"><FaLinkedinIn size={20} /></a> </p>
-                                        <p className='p-3 rounded-full border-1'> <a href="https://github.com/Masumiub" target="_blank"><FiGithub size={20} /></a> </p>
-                                        <p className='p-3 rounded-full border-1'> <a href="https://discord.com/users/masummusfique2789" target="_blank"><RxDiscordLogo size={20} /></a></p>
+                                        <p className='p-3 rounded-full border-1 hover:bg-white'> <a href="https://www.linkedin.com/in/musfique-77-masum/" target="_blank" className='hover:text-black'><FaLinkedinIn size={20} /></a> </p>
+                                        <p className='p-3 rounded-full border-1 hover:bg-white'> <a href="https://github.com/Masumiub" target="_blank" className='hover:text-black'><FiGithub size={20} /></a> </p>
+                                        <p className='p-3 rounded-full border-1 hover:bg-white'> <a href="https://discord.com/users/masummusfique2789" target="_blank" className='hover:text-black'><RxDiscordLogo size={20} /></a></p>
                                     </div>
 
                                 </div>
@@ -93,7 +93,7 @@ const ContactMe = () => {
 
                         <div className='w-full lg:w-1/2'>
 
-                            <div className='h-full flex p-10 rounded-2xl border-2 border-dashed border-indigo-950 gap-5 items-center backdrop-blur-2xl backdrop-brightness-50'>
+                            <div className='h-full flex p-7 rounded-2xl border-2 border-dashed border-indigo-950 gap-5 items-center backdrop-blur-2xl backdrop-brightness-50'>
 
                                 <fieldset className="fieldset w-full">
 

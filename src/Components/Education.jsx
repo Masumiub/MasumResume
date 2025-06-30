@@ -23,11 +23,11 @@ const Education = () => {
                         <Slide direction="left" triggerOnce>
                             <div className='flex p-4 rounded-2xl border-2 border-dashed border-indigo-950 gap-5 items-center backdrop-blur-2xl backdrop-brightness-50'>
 
-                                <div className=''>
+                                <div>
                                     <img src='https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/Jahangirnagar_University_Logo.svg/1200px-Jahangirnagar_University_Logo.svg.png' alt="html" className='bg-white rounded-2xl h-45 w-45 object-cover' />
                                 </div>
 
-                                <div className=''>
+                                <div className='w-full'>
                                     <FaBookReader size={25} className='mb-2' />
                                     <h2 className='text-2xl'>Masters</h2>
                                     <h3>M.Sc. in Computer Science & Engineering</h3>
