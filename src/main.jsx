@@ -13,12 +13,16 @@ import Skills from './Components/Skills.jsx';
 import Education from './Components/Education.jsx';
 import ContactMe from './Components/ContactMe.jsx';
 import Projects from './Components/Projects.jsx';
+import LoadingState from './Components/LoadingState.jsx';
+import ErrorPage from './Pages/ErrorPage.jsx';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     Component: MainLayout,
+    errorElement: <ErrorPage></ErrorPage>,
+    hydrateFallbackElement: <LoadingState></LoadingState>,
     children: [
       { index: true, Component: Home },
       { path: '/aboutMe', 

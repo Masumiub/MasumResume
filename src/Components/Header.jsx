@@ -54,7 +54,7 @@ const Header = () => {
                         </h1> */}
 
                         <div className='mt-15'>
-                            <p>I'm a full-stack web developer and I work remotely Dhaka, Bangladesh.</p>
+                            <p>Building fast, responsive web apps from Dhaka, Bangladesh — available for remote work worldwide.</p>
                         </div>
 
                         <div className='mt-10 flex gap-5'>

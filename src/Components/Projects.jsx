@@ -5,7 +5,7 @@ import { Fade } from "react-awesome-reveal";
 const Projects = () => {
     return (
         <Fade>
-        <div className='p-5 Bg py-45'>
+        <div className='p-5 Bg py-20 lg:py-45'>
             <div>
                 <h1 className='font-bold text-5xl md:text-7xl lg:text-8xl'>
                     Projects
@@ -33,7 +33,10 @@ const Projects = () => {
                             </div>
 
                             <div className='mt-6 flex flex-wrap gap-4'>
-                                <button className='border-1 border-primary px-4 rounded-full text-xs'>React JS</button> <button className='border-1 border-primary px-4 rounded-full text-xs'>Node JS</button> <button className='border-1 border-primary px-4 rounded-full text-xs'>Express JS</button> <button className='border-1 border-primary px-4 rounded-full text-xs'>Firebase</button>
+                                <button className='border-1 border-primary px-4 py-2 rounded-full text-xs flex gap-1 bg-indigo-950'><img width="15" height="15" src="https://img.icons8.com/color/48/react-native.png" alt="react-native"/>React JS</button> 
+                                <button className='border-1 border-primary px-4 py-2 rounded-full text-xs flex gap-1 bg-indigo-950'><img width="15" height="15" src="https://img.icons8.com/fluency/48/node-js.png" alt="node-js"/>Node JS</button> 
+                                <button className='border-1 border-primary px-4 py-2 rounded-full text-xs flex gap-1 bg-indigo-950'><img width="15" height="15" src="https://img.icons8.com/officel/80/express-js.png" alt="express-js"/>Express JS</button> 
+                                <button className='border-1 border-primary px-4 py-2 rounded-full text-xs flex gap-1 bg-indigo-950'><img width="15" height="15" src="https://img.icons8.com/color/48/firebase.png" alt="firebase"/>Firebase</button>
                             </div>
 
 
@@ -93,7 +96,10 @@ const Projects = () => {
                             </div>
 
                             <div className='mt-6 flex flex-wrap gap-4'>
-                                <button className='border-1 border-primary px-4 rounded-full text-xs'>React JS</button> <button className='border-1 border-primary px-4 rounded-full text-xs'>Node JS</button> <button className='border-1 border-primary px-4 rounded-full text-xs'>Express JS</button> <button className='border-1 border-primary px-4 rounded-full text-xs'>Firebase</button>
+                                <button className='border-1 border-primary px-4 py-2 rounded-full text-xs flex gap-1 bg-indigo-950'><img width="15" height="15" src="https://img.icons8.com/color/48/react-native.png" alt="react-native"/>React JS</button> 
+                                <button className='border-1 border-primary px-4 py-2 rounded-full text-xs flex gap-1 bg-indigo-950'><img width="15" height="15" src="https://img.icons8.com/fluency/48/node-js.png" alt="node-js"/>Node JS</button> 
+                                <button className='border-1 border-primary px-4 py-2 rounded-full text-xs flex gap-1 bg-indigo-950'><img width="15" height="15" src="https://img.icons8.com/officel/80/express-js.png" alt="express-js"/>Express JS</button> 
+                                <button className='border-1 border-primary px-4 py-2 rounded-full text-xs flex gap-1 bg-indigo-950'><img width="15" height="15" src="https://img.icons8.com/color/48/firebase.png" alt="firebase"/>Firebase</button>
                             </div>
 
 
@@ -153,7 +159,9 @@ const Projects = () => {
                             </div>
 
                             <div className='mt-6 flex flex-wrap gap-4'>
-                                <button className='border-1 border-primary px-4 rounded-full text-xs'>React JS</button>  <button className='border-1 border-primary px-4 rounded-full text-xs'>Tailwind CSS</button> <button className='border-1 border-primary px-4 rounded-full text-xs'>Firebase</button>
+                                <button className='border-1 border-primary px-4 py-2 rounded-full text-xs flex gap-1 bg-indigo-950'><img width="15" height="15" src="https://img.icons8.com/color/48/react-native.png" alt="react-native"/>React JS</button> 
+                                <button className='border-1 border-primary px-4 py-2 rounded-full text-xs flex gap-1 bg-indigo-950'><img width="15" height="15" src="https://img.icons8.com/color/48/tailwind_css.png" alt="tailwind_css"/>Tailwind CSS</button>
+                                <button className='border-1 border-primary px-4 py-2 rounded-full text-xs flex gap-1 bg-indigo-950'><img width="15" height="15" src="https://img.icons8.com/color/48/firebase.png" alt="firebase"/>Firebase</button>
                             </div>
 
 

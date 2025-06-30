@@ -6,7 +6,7 @@ import { Fade } from "react-awesome-reveal";
 const Skills = () => {
     return (
         <Fade>
-            <div className='p-5 skillBg py-45'>
+            <div className='p-5 skillBg py-20 lg:py-45'>
                 <div>
                     <h1 className='font-bold text-5xl md:text-7xl lg:text-8xl'>
                         Skills
