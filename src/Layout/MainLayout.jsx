@@ -25,7 +25,7 @@ const MainLayout = () => {
             {/* Page content */}
             <div className="drawer-content flex flex-col">
                 {/* Navbar (visible only on small screens) */}
-                <div className="navbar bg-black border-b-1 border-white md:hidden">
+                <div className="navbar bg-black border-b-1 border-white md:hidden fixed z-10">
                     <div className="flex-none">
                         <label htmlFor="my-drawer-3" aria-label="open sidebar" className="btn btn-square btn-ghost">
                             <svg

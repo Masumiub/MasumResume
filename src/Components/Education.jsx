@@ -1,9 +1,8 @@
 import React from 'react';
 import { Slide } from "react-awesome-reveal";
 import './Education.css'
-import { FaGraduationCap } from "react-icons/fa6";
 import { FaBookReader } from "react-icons/fa";
-
+import { FaGraduationCap } from "react-icons/fa6";
 
 const Education = () => {
     return (
@@ -16,53 +15,85 @@ const Education = () => {
                     </h1>
                 </div>
 
-                <div className='flex flex-col-reverse lg:flex-row gap-10 lg:items-stretch mt-10'>
-
-
-                    <div className='w-full lg:w-1/2'>
-                        <Slide direction="left" triggerOnce>
-                            <div className='flex p-4 rounded-2xl border-2 border-dashed border-indigo-950 gap-5 items-center backdrop-blur-2xl backdrop-brightness-50'>
-
-                                <div>
-                                    <img src='https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/Jahangirnagar_University_Logo.svg/1200px-Jahangirnagar_University_Logo.svg.png' alt="html" className='bg-white rounded-2xl h-45 w-45 object-cover' />
-                                </div>
-
-                                <div className='w-full'>
-                                    <FaBookReader size={25} className='mb-2' />
-                                    <h2 className='text-2xl'>Masters</h2>
-                                    <h3>M.Sc. in Computer Science & Engineering</h3>
-
-                                    <h4 className='mt-5'>Jahangirnagar University</h4>
-                                    <p>Passing Year: 2026</p>
-                                </div>
-
-                            </div>
-                        </Slide>
-
+                <div className='flex flex-col md:flex-row my-5 gap-8'>
+                    <div className='w-full md:w-2/12'>
+                    <FaGraduationCap size={25}/>
+                        <h3 className="text-2xl font-semibold">Journey</h3>
                     </div>
 
 
+                    <div className='w-full md:w-10/12'>
+                        <ul className="timeline timeline-snap-icon timeline-compact timeline-vertical">
 
-                    <div className='w-full lg:w-1/2'>
-                        <Slide direction="right" triggerOnce>
-                            <div className='flex p-4 rounded-2xl border-2 border-dashed border-indigo-950 gap-5 items-center backdrop-blur-2xl backdrop-brightness-50'>
-                                <div>
-                                    <img src='https://scontent.fdac24-5.fna.fbcdn.net/v/t39.30808-6/326433143_527873762741016_3934733276324235841_n.png?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=olR-BN5KWwoQ7kNvwFokXGw&_nc_oc=AdlyJbCNqMJLe69v1Kun34BC1PBa6BTOjG9F1Da7tBq0bayOlca4XT2aQxYh0uOxfQA&_nc_zt=23&_nc_ht=scontent.fdac24-5.fna&_nc_gid=Tf0q7uIQVLDEnlnZEVv2cg&oh=00_AfOWBdR1uIPyQCLpxxZXl3jPOj96HwPw-OudtAwjmHa9eA&oe=6865D0A9' alt="iub" className='bg-white rounded-2xl h-45 w-45 object-cover' />
+                            <li>
+                                <hr />
+                                <div className="timeline-middle">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                        className="h-5 w-5"
+                                    >
+                                        <path
+                                            fillRule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                            clipRule="evenodd"
+                                        />
+                                    </svg>
                                 </div>
-                                <div className='w-full'>
+                                <div className="timeline-end mb-10">
+                                    <time className="text-sm bg-purple-950 border-1 border-purple-600 rounded-lg px-4 py-1">2025 - 2026</time>
+                                    <div>
+                                        <img src='https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/Jahangirnagar_University_Logo.svg/1200px-Jahangirnagar_University_Logo.svg.png' alt="html" className='bg-white rounded-2xl h-45 w-35 object-cover mt-5' />
+                                    </div>
+                                    <div className="text-lg font-black mt-2">M.Sc. in Computer Science & Engineering</div>
+                                    <p className='mt-4'>
+                                        Jahangirnagar University
+                                    </p>
 
-                                    <FaGraduationCap size={25} className='mb-2' />
-                                    <h2 className='text-2xl'>Undergradate</h2>
-                                    <h3>B.Sc. in Computer Science & Engineering</h3>
-
-                                    <h4 className='mt-5'>Independent University, Bangladesh</h4>
-                                    <p>CGPA: 3.75 | Passing Year: 2024</p>
+                                    <p className='leading-8 mt-3 text-sm'>Pursuing advanced studies in algorithms, software architecture, and intelligent systems. This program is strengthening my theoretical foundation and preparing me for more complex problem-solving in real-world software development.</p>
                                 </div>
-                            </div>
-                        </Slide>
+                                <hr />
+                            </li>
+                            <li>
+                                <hr />
+                                <div className="timeline-middle">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                        className="h-5 w-5"
+                                    >
+                                        <path
+                                            fillRule="evenodd"
+                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                            clipRule="evenodd"
+                                        />
+                                    </svg>
+                                </div>
+                                <div className="timeline-end md:mb-10">
+                                    <time className="text-sm bg-purple-950 border-1 border-purple-600 rounded-lg px-4 py-1">2019 - 2024</time>
+                                    <div>
+                                        <img src='https://www.eduopinions.com/wp-content/uploads/2020/06/Independent-University-Bangladesh-logo.jpg' alt="html" className='bg-white rounded-2xl h-45 w-35 object-cover mt-5' />
+                                    </div>
+                                    <div className="text-lg font-black mt-2">B.Sc. in Computer Science & Engineering</div>
+                                    <p className='mt-4'>
+                                        Independent University, Bangladesh
+                                    </p>
+
+                                    <p className='leading-8 mt-3 text-sm'>Completed a well-rounded undergraduate program focused on programming, data structures, databases, and web development. Built a strong base in both theoretical computer science and practical application development.</p>
+                                    <button className='btn btn-sm bg-purple-950 border-1 border-purple-600 rounded-lg mt-4 w-30'>CGPA: 3.75</button>
+                                </div>
+                                <hr />
+                            </li>
+                        </ul>
                     </div>
-
                 </div>
+
+
+
+
+
 
             </div>
         </div>

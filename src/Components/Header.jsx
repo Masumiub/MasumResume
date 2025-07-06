@@ -9,7 +9,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText as GSAPSplitText } from "gsap/SplitText";
 import SplitText from "../Components/SplitText";
 import BlurText from "../Components/BlurText"
-
+import { FaLinkedinIn } from 'react-icons/fa6';
+import { FiGithub } from 'react-icons/fi';
+import { RxDiscordLogo } from 'react-icons/rx';
+import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 
 const Header = () => {
     // const handleAnimationComplete = () => {
@@ -37,7 +40,7 @@ const Header = () => {
                             textAlign="center"
                         />
 
-                        
+
                         <BlurText
                             text="MASUM MUSFIQUE"
                             delay={300}
@@ -52,6 +55,7 @@ const Header = () => {
                             MASUM <br />
                             MUSFIQUE
                         </h1> */}
+
 
                         <div className='mt-15'>
                             <p>Building fast, responsive web apps from Dhaka, Bangladesh — available for remote work worldwide.</p>
@@ -80,6 +84,20 @@ const Header = () => {
                                 <span class="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">Download Resume</span>
                             </a>
                         </div>
+
+                        <p className='mt-8 text-xl'>Follow me: </p>
+                        <div className='flex mt-2 gap-5'>
+                            <p className='p-3 rounded-full border-1 hover:bg-primary'> <a href="https://www.linkedin.com/in/musfique-77-masum/" target="_blank" ><FaLinkedinIn size={20} /></a> </p>
+                            <p className='p-3 rounded-full border-1 hover:bg-primary'> <a href="https://github.com/Masumiub" target="_blank"><FiGithub size={20} /></a> </p>
+                            <p className='p-3 rounded-full border-1 hover:bg-primary'> <a href="https://discord.com/users/masummusfique2789" target="_blank" ><RxDiscordLogo size={20} /></a></p>
+                        </div>
+                        
+                        
+                        <motion.div animate={{ y: [100, 150, 100] }}
+                            transition={{ duration: 5, repeat: Infinity }}>
+                            <MdOutlineKeyboardDoubleArrowDown  size={30}/>
+                        </motion.div>
+                        
                     </div>
 
                     <div className='w-full lg:w-1/3'>
