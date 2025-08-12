@@ -75,7 +75,7 @@ const MainLayout = () => {
                     <li><NavLink to='/education'><FaBookOpen />Education</NavLink></li>
                     <li><NavLink to='/projects'><MdWork />Projects</NavLink></li>
                     <li><NavLink to='/contactme'><RiMailSendFill />Contact</NavLink></li>
-                    <li><a href="/MasumMusfique_Resume.pdf" download> <FaDownload />Resume</a></li>
+                    <li><a href="/Resume_Masum_Musfique.docx.pdf" download> <FaDownload />Resume</a></li>
 
                 </ul>
             </div>

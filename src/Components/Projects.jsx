@@ -5,6 +5,10 @@ import { FaGithub } from "react-icons/fa6";
 import { FaGithubAlt } from "react-icons/fa";
 import { MdLaptopChromebook } from "react-icons/md";
 import { MdFormatListBulleted } from "react-icons/md";
+import onlinestudy from '../assets/onlineStudyRoom.png'
+import favfreelancer from '../assets/favfreelancer.png'
+import jobseekers from '../assets/jobseekers.png'
+
 
 const Projects = () => {
     return (
@@ -21,7 +25,7 @@ const Projects = () => {
                         {/* project 1 */}
                         <div className='flex flex-col lg:flex-row p-4 rounded-2xl border-2 border-dashed border-indigo-950 gap-5 items-center backdrop-blur-2xl backdrop-brightness-50 '>
                             <div className='w-full lg:w-1/2'>
-                                <img src='https://media.licdn.com/dms/image/v2/D5622AQE9ONqU6yC1sg/feedshare-shrink_2048_1536/B56ZedZQYqHoAo-/0/1750692336464?e=1753920000&v=beta&t=vR66C545Yx_FaowQ6VoHmuDNbFN0UxS4FZy_vYtGC6A' alt="banner" className='rounded-2xl' />
+                                <img src={onlinestudy} alt="banner" className='rounded-2xl' />
                             </div>
                             <div className='w-full lg:w-1/2'>
                                 <h1 className='mb-3 text-3xl font-bold'>Online Study Room</h1>
@@ -54,16 +58,34 @@ const Projects = () => {
                                 <dialog id="project_1_modal" className="modal">
                                     <div className="modal-box rounded-2xl shadow-2xl border-1 border-indigo-900 w-11/12 max-w-5xl">
                                         <h3 className="font-bold text-2xl">Online Study Room</h3>
-                                        <div className='w-full mt-3'>
-                                            <img src='https://media.licdn.com/dms/image/v2/D5622AQE9ONqU6yC1sg/feedshare-shrink_2048_1536/B56ZedZQYqHoAo-/0/1750692336464?e=1753920000&v=beta&t=vR66C545Yx_FaowQ6VoHmuDNbFN0UxS4FZy_vYtGC6A' alt="banner" className='rounded-2xl' />
+                                        <div className='max-w-lg mt-3'>
+                                            <img src={onlinestudy} alt="banner" className='rounded-2xl' />
                                         </div>
                                         <h2 className='leading-8 text-sm mt-3'>Online Study Room, a collaborative web application built to enhance online group study experiences. Every registered user becomes a friend, allowing open collaboration, assignment sharing, and peer grading.</h2>
+
+
+                                        <div className='mt-6 flex flex-wrap gap-4'>
+                                            <button className='border-1 border-primary px-4 py-2 rounded-full text-xs flex gap-1 bg-indigo-950'><img width="15" height="15" src="https://img.icons8.com/color/48/react-native.png" alt="react-native" />React JS</button>
+                                            <button className='border-1 border-primary px-4 py-2 rounded-full text-xs flex gap-1 bg-indigo-950'><img width="15" height="15" src="https://img.icons8.com/fluency/48/node-js.png" alt="node-js" />Node JS</button>
+                                            <button className='border-1 border-primary px-4 py-2 rounded-full text-xs flex gap-1 bg-indigo-950'><img width="15" height="15" src="https://img.icons8.com/officel/80/express-js.png" alt="express-js" />Express JS</button>
+                                            <button className='border-1 border-primary px-4 py-2 rounded-full text-xs flex gap-1 bg-indigo-950'><img width="15" height="15" src="https://img.icons8.com/color/48/firebase.png" alt="firebase" />Firebase</button>
+                                        </div>
 
                                         <div className='mt-8 flex flex-wrap gap-6'>
                                             <a href="https://github.com/Masumiub/OnlineStudyRoom-Client" target='_blank' className='btn btn-md bg-white text-indigo-500 rounded-md border-b-3 border-indigo-500 hover:bg-indigo-500 hover:text-white'>Github Client</a>
                                             <a href="https://onlinestudyroom-all.web.app/" target='_blank' className='btn btn-md bg-indigo-500 text-white rounded-md border-b-3 border-indigo-500 hover:bg-white hover:text-indigo-500'>Live Link</a>
                                             <a href="https://github.com/Masumiub/OnlineStudyRoom-Server" target='_blank' className='btn btn-md bg-white text-indigo-500 rounded-md border-b-3 border-indigo-500 hover:bg-indigo-500 hover:text-white'>Github Server</a>
 
+                                        </div>
+
+
+                                        <div className='mt-8'>
+                                            <h3 className='text-xl font-bold'>Features:</h3>
+                                            <ul className='text-sm leading-8  mt-3'>
+                                                <li>- Create and share assignments with friends</li>
+                                                <li>- Review and grade each other’s submissions</li>
+                                                <li>- Track Your Submissions</li>
+                                            </ul>
                                         </div>
 
                                         <div className='mt-8'>
@@ -98,7 +120,7 @@ const Projects = () => {
                         {/* project 2 */}
                         <div className='flex flex-col lg:flex-row p-4 rounded-2xl border-2 border-dashed border-indigo-950 gap-5 items-center backdrop-blur-2xl backdrop-brightness-50 mt-25'>
                             <div className='w-full lg:w-1/2'>
-                                <img src='https://media.licdn.com/dms/image/v2/D5622AQFwRFcRQ_YeCg/feedshare-shrink_2048_1536/B56ZedQxu8HoAw-/0/1750690112441?e=1753920000&v=beta&t=VQyhuzuIFUtlX_bvg0q4ihh60q7TmszbT57VYUPrpYk' alt="banner" className='rounded-2xl' />
+                                <img src={favfreelancer} alt="banner" className='rounded-2xl' />
                             </div>
                             <div className='w-full lg:w-1/2'>
                                 <h1 className='mb-3 text-3xl font-bold'>FavFreelancer</h1>
@@ -132,15 +154,33 @@ const Projects = () => {
                             <dialog id="project_2_modal" className="modal">
                                 <div className="modal-box rounded-2xl shadow-2xl border-1 border-indigo-900 w-11/12 max-w-5xl">
                                     <h3 className="font-bold text-2xl">FavFreelancer</h3>
-                                    <div className='w-full mt-3'>
-                                        <img src='https://media.licdn.com/dms/image/v2/D5622AQFwRFcRQ_YeCg/feedshare-shrink_2048_1536/B56ZedQxu8HoAw-/0/1750690112441?e=1753920000&v=beta&t=VQyhuzuIFUtlX_bvg0q4ihh60q7TmszbT57VYUPrpYk' alt="banner" className='rounded-2xl' />
+                                    <div className='max-w-lg mt-3'>
+                                        <img src={favfreelancer} alt="banner" className='rounded-2xl' />
                                     </div>
                                     <h2 className='leading-8 text-sm mt-3'>FavFreelancer, a full-stack web application that connects freelancers with tasks, allowing users to add, manage, and bid on freelance projects in real-time.</h2>
+
+
+                                    <div className='mt-6 flex flex-wrap gap-4'>
+                                        <button className='border-1 border-primary px-4 py-2 rounded-full text-xs flex gap-1 bg-indigo-950'><img width="15" height="15" src="https://img.icons8.com/color/48/react-native.png" alt="react-native" />React JS</button>
+                                        <button className='border-1 border-primary px-4 py-2 rounded-full text-xs flex gap-1 bg-indigo-950'><img width="15" height="15" src="https://img.icons8.com/fluency/48/node-js.png" alt="node-js" />Node JS</button>
+                                        <button className='border-1 border-primary px-4 py-2 rounded-full text-xs flex gap-1 bg-indigo-950'><img width="15" height="15" src="https://img.icons8.com/officel/80/express-js.png" alt="express-js" />Express JS</button>
+                                        <button className='border-1 border-primary px-4 py-2 rounded-full text-xs flex gap-1 bg-indigo-950'><img width="15" height="15" src="https://img.icons8.com/color/48/firebase.png" alt="firebase" />Firebase</button>
+                                    </div>
+
 
                                     <div className='mt-8 flex flex-wrap gap-6'>
                                         <a href="https://github.com/Masumiub/favFreelancer-Client" target='_blank' className='btn btn-md bg-white text-indigo-500 rounded-md border-b-3 border-indigo-500 hover:bg-indigo-500 hover:text-white'><FaGithub /> Github Client</a>
                                         <a href="https://favfreelancer-client.web.app/" target='_blank' className='btn btn-md bg-indigo-500 text-white rounded-md border-b-3 border-indigo-500 hover:bg-white hover:text-indigo-500'><MdLaptopChromebook />Live Link</a>
                                         <a href="https://github.com/Masumiub/favFreelancer-Server" target='_blank' className='btn btn-md bg-white text-indigo-500 rounded-md border-b-3 border-indigo-500 hover:bg-indigo-500 hover:text-white'><FaGithubAlt />Github Server</a>
+                                    </div>
+
+                                    <div className='mt-8'>
+                                        <h3 className='text-xl font-bold'>Features:</h3>
+                                        <ul className='text-sm leading-8  mt-3'>
+                                            <li>- Add / Edit / Delete Tasks – Logged-in users can manage freelance tasks</li>
+                                            <li>- Real-Time Bidding System – Tracks bids per task dynamically</li>
+                                            <li>- Filtering & Mapping – Smooth task filtering for better UX</li>
+                                        </ul>
                                     </div>
 
                                     <div className='mt-8'>
@@ -174,7 +214,7 @@ const Projects = () => {
                         {/* project 3 */}
                         <div className='flex flex-col lg:flex-row p-4 rounded-2xl border-2 border-dashed border-indigo-950 gap-5 items-center backdrop-blur-2xl backdrop-brightness-50 mt-25'>
                             <div className='w-full lg:w-1/2'>
-                                <img src='https://media.licdn.com/dms/image/v2/D5622AQE6N91yYJuSzQ/feedshare-shrink_2048_1536/B56Zeby6jIGoAs-/0/1750665507219?e=1753920000&v=beta&t=-qlTRH8EH4_SSlt6vM45QiMy6jo_ja01Z1zZVHXKxmo' alt="banner" className='rounded-2xl' />
+                                <img src={jobseekers} alt="banner" className='rounded-2xl' />
                             </div>
                             <div className='w-full lg:w-1/2'>
                                 <h1 className='mb-3 text-3xl font-bold'>Job Seeker</h1>
@@ -204,17 +244,32 @@ const Projects = () => {
 
                             </div>
 
-                            <dialog id="project_3_modal" className="modal">
+                            <dialog id="project_3_modal" className="modal shadow-2xl">
                                 <div className="modal-box rounded-2xl shadow-2xl border-1 border-indigo-900 w-11/12 max-w-5xl">
                                     <h3 className="font-bold text-2xl">Job Seeker</h3>
-                                    <div className='w-full mt-3'>
-                                      <img src='https://media.licdn.com/dms/image/v2/D5622AQE6N91yYJuSzQ/feedshare-shrink_2048_1536/B56Zeby6jIGoAs-/0/1750665507219?e=1753920000&v=beta&t=-qlTRH8EH4_SSlt6vM45QiMy6jo_ja01Z1zZVHXKxmo' alt="banner" className='rounded-2xl' />
+                                    <div className='max-w-lg mt-3'>
+                                        <img src={jobseekers} alt="banner" className='rounded-2xl' />
                                     </div>
                                     <h2 className='leading-8 text-sm mt-3'>Job Seeker, a responsive and intuitive job listing platform designed to help users explore job opportunities across multiple companies — all in one place.</h2>
 
+
+                                    <div className='mt-6 flex flex-wrap gap-4'>
+                                        <button className='border-1 border-primary px-4 py-2 rounded-full text-xs flex gap-1 bg-indigo-950'><img width="15" height="15" src="https://img.icons8.com/color/48/react-native.png" alt="react-native" />React JS</button>
+                                        <button className='border-1 border-primary px-4 py-2 rounded-full text-xs flex gap-1 bg-indigo-950'><img width="15" height="15" src="https://img.icons8.com/color/48/tailwind_css.png" alt="tailwind_css" />Tailwind CSS</button>
+                                        <button className='border-1 border-primary px-4 py-2 rounded-full text-xs flex gap-1 bg-indigo-950'><img width="15" height="15" src="https://img.icons8.com/color/48/firebase.png" alt="firebase" />Firebase</button>
+                                    </div>
                                     <div className='mt-8 flex flex-wrap gap-6'>
                                         <a href="https://github.com/Masumiub/jobSeekers" target='_blank' className='btn btn-md bg-white text-indigo-500 rounded-md border-b-3 border-indigo-500 hover:bg-indigo-500 hover:text-white'><FaGithub /> Github</a>
                                         <a href="https://jobseekers-1a20c.web.app/" target='_blank' className='btn btn-md bg-indigo-500 text-white rounded-md border-b-3 border-indigo-500 hover:bg-white hover:text-indigo-500'><MdLaptopChromebook />Live Link</a>
+                                    </div>
+
+                                    <div className='mt-8'>
+                                        <h3 className='text-xl font-bold'>Features:</h3>
+                                        <ul className='text-sm leading-8 mt-3'>
+                                            <li>- Browse jobs from various companies</li>
+                                            <li>- Review job requirements</li>
+                                            <li>- Check if they meet qualifications</li>
+                                        </ul>
                                     </div>
 
                                     <div className='mt-8'>
